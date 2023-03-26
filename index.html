@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Frontend Mentor | Time tracking dashboard</title>
+    </head>
+    <body>
+        <main class="tracker">
+            <div class="tracker__profile-container">
+                <div class="tracker__profile">
+                    <div class="tracker__profile-img">
+                        <img
+                            src="./images/image-jeremy.png"
+                            alt="A Picture of Jeremy Robson"
+                        />
+                    </div>
+                    <h1 class="tracker__profile-title">
+                        <span class="report">Report for</span> Jeremy
+                        <span class="break-title">Robson</span>
+                    </h1>
+                </div>
+                <ul class="tracker__status">
+                    <li class="tracker__status-item" id="daily">
+                        <button id="daily" class="tracker__status-btn">
+                            Daily
+                        </button>
+                    </li>
+                    <li class="tracker__status-item">
+                        <button id="weekly" class="tracker__status-btn">
+                            Weekly
+                        </button>
+                    </li>
+                    <li class="tracker__status-item">
+                        <button id="monthly" class="tracker__status-btn">
+                            Monthly
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tracker__card">
+                <div class="tracker__card-icon tracker__card-icon-work"></div>
+                <img src="./images/icon-work.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Work</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+            <div class="tracker__card">
+                <div class="tracker__card-icon tracker__card-icon-play"></div>
+                <img src="./images/icon-play.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Play</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+            <div class="tracker__card">
+                <div class="tracker__card-icon tracker__card-icon-study"></div>
+                <img src="./images/icon-study.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Study</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+            <div class="tracker__card">
+                <div
+                    class="tracker__card-icon tracker__card-icon-exercise"
+                ></div>
+                <img src="./images/icon-exercise.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Exercise</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+            <div class="tracker__card">
+                <div class="tracker__card-icon tracker__card-icon-social"></div>
+                <img src="./images/icon-social.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Social</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+            <div class="tracker__card">
+                <div
+                    class="tracker__card-icon tracker__card-icon-self-care"
+                ></div>
+                <img src="./images/icon-self-care.svg" alt="" />
+                <div class="tracker__card-content">
+                    <div>
+                        <h2>Self Care</h2>
+                        <div class="tracker__card-ellipsis">
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
+                    </div>
+                    <p class="tracker__card-current">32hrs</p>
+                    <p class="tracker__card-previous">Last Week 36hrs</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
