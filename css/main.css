@@ -76,6 +76,7 @@ h2 {
   padding-bottom: 1rem;
 }
 .tracker__status-btn {
+  display: block;
   transition: all 0.4s ease-in-out;
   background: transparent;
   border: none;
@@ -85,10 +86,10 @@ h2 {
   color: hsl(235, 45%, 61%);
   cursor: pointer;
 }
-.tracker__status-btn:hover {
+.tracker__status-btn:hover, .tracker__status-btn:active, .tracker__status-btn:focus {
   color: white;
 }
-.tracker__status .active {
+.tracker__status-btn .active {
   color: white;
 }
 .tracker__card {

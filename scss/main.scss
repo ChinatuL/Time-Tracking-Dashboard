@@ -73,6 +73,7 @@ h2 {
         }
 
         &-btn {
+            display: block;
             @include transition-1;
             background: transparent;
             border: none;
@@ -82,13 +83,15 @@ h2 {
             color: $desaturated-blue;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
                 color: white;
             }
-        }
 
-        .active {
-            color: white;
+            .active {
+                color: white;
+            }
         }
     }
 
