@@ -42,9 +42,6 @@ const getDailyData = () => {
                     ].innerHTML = `Last Week - ${data[index].timeframes.daily.previous}hrs`;
                 });
             });
-        })
-        .catch((err) => {
-            console.log(err);
         });
 };
 
@@ -65,9 +62,6 @@ const getWeeklyData = () => {
                     ].innerHTML = `Last Week - ${data[index].timeframes.weekly.previous}hrs`;
                 });
             });
-        })
-        .catch((err) => {
-            console.log(err);
         });
 };
 
@@ -88,9 +82,6 @@ const getMonthlyData = () => {
                     ].innerHTML = `Last Week - ${data[index].timeframes.monthly.previous}hrs`;
                 });
             });
-        })
-        .catch((err) => {
-            console.log(err);
         });
 };
 
