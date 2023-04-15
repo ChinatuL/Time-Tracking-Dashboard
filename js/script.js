@@ -26,7 +26,7 @@ monthlyBtn.addEventListener("click", () => {
 });
 
 const getDailyData = () => {
-    fetch("../data.json")
+    fetch("../json/data.json")
         .then((response) => {
             return response.json();
         })
@@ -47,7 +47,7 @@ const getDailyData = () => {
 };
 
 const getWeeklyData = () => {
-    fetch("../data.json")
+    fetch("../json/data.json")
         .then((response) => {
             return response.json();
         })
@@ -68,7 +68,7 @@ const getWeeklyData = () => {
 };
 
 const getMonthlyData = () => {
-    fetch("../data.json")
+    fetch("../json/data.json")
         .then((response) => {
             return response.json();
         })
