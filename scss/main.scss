@@ -12,10 +12,6 @@ body {
     animation: 1s linear 0.1s scaleAnimation;
 }
 
-h2 {
-    font-size: 1rem;
-}
-
 @keyframes scaleAnimation {
     from {
         transform: scale(0);
@@ -23,6 +19,10 @@ h2 {
     to {
         transform: scale(1);
     }
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 .tracker {
@@ -35,14 +35,14 @@ h2 {
 
     &__profile-container {
         grid-row: 1 / 3;
-        background-color: $dark-blue;
         border-radius: 1rem;
+        background-color: $dark-blue;
     }
 
     &__profile {
+        border-radius: 1rem;
         padding: 1rem;
         background-color: $blue;
-        border-radius: 1rem;
 
         &-img {
             width: 50px;
@@ -63,9 +63,9 @@ h2 {
 
             .report {
                 display: block;
+                color: $pale-blue;
                 font-size: 0.7rem;
                 font-weight: getFontWeight(light);
-                color: $pale-blue;
             }
 
             .break-title {
@@ -78,24 +78,21 @@ h2 {
         padding: 1rem;
 
         &-item {
-            list-style-type: none;
             padding-bottom: 1rem;
         }
 
         &-btn {
-            display: block;
             @include transition-1;
+            display: block;
             background: transparent;
             border: none;
+            color: $desaturated-blue;
             font-family: inherit;
             font-size: 1rem;
             font-weight: getFontWeight(light);
-            color: $desaturated-blue;
             cursor: pointer;
 
-            &:hover,
-            &:active,
-            &:focus {
+            &:hover {
                 color: white;
             }
 
@@ -153,11 +150,11 @@ h2 {
 
         &-content {
             @include transition-1;
-            background-color: $dark-blue;
-            border-radius: 1rem;
             z-index: 1;
+            border-radius: 1rem;
             margin-top: 2rem;
             padding: 1.5rem;
+            background-color: $dark-blue;
 
             &:hover {
                 cursor: pointer;
