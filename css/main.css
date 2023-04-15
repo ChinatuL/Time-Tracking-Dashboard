@@ -20,12 +20,21 @@ body {
   min-height: 100vh;
   background-color: hsl(226, 43%, 10%);
   color: white;
+  animation: 1s linear 0.1s scaleAnimation;
 }
 
 h2 {
   font-size: 1rem;
 }
 
+@keyframes scaleAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .tracker {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

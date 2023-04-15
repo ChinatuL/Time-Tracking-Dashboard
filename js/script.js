@@ -89,7 +89,7 @@ const getMonthlyData = () => {
 };
 
 window.addEventListener("load", () => {
-    daily.classList.remove("active");
+    dailyBtn.classList.remove("active");
     weeklyBtn.classList.add("active");
     monthlyBtn.classList.remove("active");
     getWeeklyData();
