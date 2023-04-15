@@ -26,7 +26,9 @@ monthlyBtn.addEventListener("click", () => {
 });
 
 const getDailyData = () => {
-    fetch('https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/data.json')
+    fetch(
+        "https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/json/data.json"
+    )
         .then((response) => {
             return response.json();
         })
@@ -47,7 +49,9 @@ const getDailyData = () => {
 };
 
 const getWeeklyData = () => {
-    fetch('https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/data.json')
+    fetch(
+        "https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/json/data.json"
+    )
         .then((response) => {
             return response.json();
         })
@@ -68,7 +72,9 @@ const getWeeklyData = () => {
 };
 
 const getMonthlyData = () => {
-    fetch('https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/data.json')
+    fetch(
+        "https://raw.githubusercontent.com/ChinatuL/Time-Tracking-Dashboard/main/json/data.json"
+    )
         .then((response) => {
             return response.json();
         })
