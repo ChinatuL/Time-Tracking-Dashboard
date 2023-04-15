@@ -92,10 +92,11 @@ h2 {
             font-weight: getFontWeight(light);
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 color: white;
             }
-
             .active {
                 color: white;
             }

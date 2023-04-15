@@ -94,7 +94,7 @@ h2 {
   font-weight: 300;
   cursor: pointer;
 }
-.tracker__status-btn:hover {
+.tracker__status-btn:hover, .tracker__status-btn:focus, .tracker__status-btn:active {
   color: white;
 }
 .tracker__status-btn .active {
